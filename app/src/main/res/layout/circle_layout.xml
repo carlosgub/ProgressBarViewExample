@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ProgressBar
+            android:id="@+id/pbCircle"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:max="100"
+            android:progress="0"
+            android:indeterminate="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+
+    <ImageView
+            android:layout_marginTop="15dp"
+            android:id="@+id/ivCircleFirst"
+            android:alpha="1"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintStart_toStartOf="@+id/pbCircle"
+            app:layout_constraintEnd_toEndOf="@+id/pbCircle"
+            app:layout_constraintTop_toTopOf="@+id/pbCircle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    <ImageView
+            android:layout_marginEnd="15dp"
+            android:id="@+id/ivCircleSecond"
+            android:alpha="0.25"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintTop_toTopOf="@+id/pbCircle"
+            app:layout_constraintBottom_toBottomOf="@+id/pbCircle"
+            app:layout_constraintEnd_toEndOf="@+id/pbCircle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    <ImageView
+            android:layout_marginBottom="15dp"
+            android:id="@+id/ivCircleThird"
+            android:alpha="0.5"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintStart_toStartOf="@+id/pbCircle"
+            app:layout_constraintBottom_toBottomOf="@+id/pbCircle"
+            app:layout_constraintEnd_toEndOf="@+id/pbCircle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    <ImageView
+            android:layout_marginStart="15dp"
+            android:id="@+id/ivCircleFourth"
+            android:alpha="0.5"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintStart_toStartOf="@+id/pbCircle"
+            app:layout_constraintBottom_toBottomOf="@+id/pbCircle"
+            app:layout_constraintTop_toTopOf="@+id/pbCircle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
